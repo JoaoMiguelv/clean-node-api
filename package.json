@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --colors --noStackTrace --passWithNoTests --runInBand --watchAll"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "npm run test",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.1"
   }
 }
