@@ -197,7 +197,7 @@ describe('Login Router', () => {
         expect(httpResponse.body).toEqual(new ServerError())
     })
 
-    test('Should return 500 if no EmailValidator has no isValid method', async () => {
+    test('Should return 500 if EmailValidator has no isValid method', async () => {
         const authUseCaseSpy = makeAuthUseCase()
         const sut = new LoginRouter(authUseCaseSpy, {})
         const httpRequest = {
