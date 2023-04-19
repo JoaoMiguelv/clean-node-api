@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --colors --noStackTrace --passWithNoTests --runInBand --watchAll"
+    "test": "jest --watch --silent --noStackTrace"
   },
   "lint-staged": {
     "*.{js}": [
