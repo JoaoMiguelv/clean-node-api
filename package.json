@@ -20,5 +20,8 @@
   "devDependencies": {
     "jest": "^29.5.0",
     "lint-staged": "^13.2.1"
+  },
+  "dependencies": {
+    "validator": "^13.9.0"
   }
 }
