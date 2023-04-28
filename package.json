@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --silent --noStackTrace"
+    "test": "jest --watch --silent --noStackTrace",
+    "test:unit": "npm test -- -c jest-unit-config.js",
+    "test:integration": "npm test -- -c jest-integration-config.js"
   },
   "lint-staged": {
     "*.{js}": [
