@@ -1,11 +1,7 @@
-const MissingParamError = require('../errors/missing-param-error')
-const UnauthorizedError = require('../errors/unauthorized-error')
-const ServerError = require('../errors/server-error')
-const InvalidParamError = require('../errors/invalid-param-error')
+const ServerError = require('./server-error')
+const UnauthorizedError = require('./unauthorized-error')
 
 module.exports = {
-  MissingParamError,
-  UnauthorizedError,
   ServerError,
-  InvalidParamError
+  UnauthorizedError
 }
